@@ -87,7 +87,6 @@ const Canvas = ({ data }: { data: Array<number> }) => {
     if (context !== null) {
       const img = new Image();
       Object.assign(img, {
-        src: "https://takurinton.dev/me.jpeg",
         onload: drawGraph(context),
       });
     }
