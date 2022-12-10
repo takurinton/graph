@@ -18,7 +18,7 @@ const Canvas = ({ data }: { data: Array<number> }) => {
     const pitchX = widthSpace / data.length;
     const pitchY = heightSpace / yMax;
 
-    // X
+    // Y
     context.beginPath();
     context.moveTo(groundX, groundY);
     context.lineTo(groundX, height);
@@ -36,7 +36,7 @@ const Canvas = ({ data }: { data: Array<number> }) => {
       context.fillText(i.toString(), groundX - 10, y);
     }
 
-    // Y
+    // X
     context.beginPath();
     context.moveTo(groundX, height);
     context.lineTo(width, height);
